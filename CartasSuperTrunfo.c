@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -39,7 +40,9 @@ int main()
     scanf("%s", codigoDaCarta1);
 
     printf("Insira o nome da cidade:\n");
-    scanf("%s", nomeDaCidade1);
+    getchar();
+    fgets(nomeDaCidade1, 50, stdin);
+    nomeDaCidade1[strcspn(nomeDaCidade1, "\n")] = 0;
 
     printf("Insira a quantidade populacional da cidade:\n");
     scanf("%lu", &populacao1);
@@ -55,6 +58,7 @@ int main()
     printf("\n");
 
     // Interação do usuario para a carta 2
+
     printf("Insira as informações da segunda carta\n");
     printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados):\n");
     scanf(" %c", &estado2);
@@ -63,7 +67,9 @@ int main()
     scanf("%s", codigoDaCarta2);
 
     printf("Insira o nome da cidade:\n");
-    scanf("%s", nomeDaCidade2);
+    getchar();
+    fgets(nomeDaCidade2, 50, stdin);
+    nomeDaCidade2[strcspn(nomeDaCidade2, "\n")] = 0;
 
     printf("Insira a quantidade populacional da cidade:\n");
     scanf("%lu", &populacao2);
