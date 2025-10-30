@@ -7,81 +7,83 @@ int main()
     // Variaveis da carta 1
 
     int carta1 = 1;
-    char estado1;
-    char codigoDaCarta1[50];
-    char nomeDaCidade1[50];
-    unsigned long int populacao1;
-    float areaEmKm1;
-    float pib1;
-    int numeroDePontosTuristicos1;
-    float densidadePopulacional1;
-    float pibPerCapita1;
+    char pais1[50] = "Brasil";
+    char estado1[20] = "RJ";
+    char codigoDaCarta1[20] = "A1";
+    char nomeDaCidade1[20] = "Rio de janeiro";
+    unsigned long int populacao1 = 100000;
+    float areaEmKm1 = 50.000;
+    float pib1 = 8.2;
+    int numeroDePontosTuristicos1 = 25;
+    float densidadePopulacional1 = 154.000;
+    float pibPerCapita1 = 8.4;
 
     // Variaveis da carta 2
 
     int carta2 = 2;
-    char estado2;
-    char codigoDaCarta2[50];
-    char nomeDaCidade2[50];
-    unsigned long int populacao2;
-    float areaEmKm2;
-    float pib2;
-    int numeroDePontosTuristicos2;
-    float densidadePopulacional2;
-    float pibPerCapita2;
+    char pais2[50] = "Brasil";
+    char estado2[10] = "SP";
+    char codigoDaCarta2[20] = "B2";
+    char nomeDaCidade2[20] = "São Paulo";
+    unsigned long int populacao2 = 80000;
+    float areaEmKm2 = 25.000;
+    float pib2 = 4.2;
+    int numeroDePontosTuristicos2 = 17;
+    float densidadePopulacional2 = 4.2;
+    float pibPerCapita2 = 5.9;
 
     // Interação do usuário para a carta 1
 
-    printf("Insira as informações da primeira carta\n");
-    printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados):\n");
-    scanf(" %c", &estado1);
+    // printf("Insira as informações da primeira carta\n");
+    // printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados):\n");
+    // scanf(" %c", &estado1);
 
-    printf("Insira o código da carta (ex: A01, B03):\n");
-    scanf("%s", codigoDaCarta1);
+    // printf("Insira o código da carta (ex: A01, B03):\n");
+    // scanf("%s", codigoDaCarta1);
 
-    printf("Insira o nome da cidade:\n");
-    getchar();
-    fgets(nomeDaCidade1, 50, stdin);
-    nomeDaCidade1[strcspn(nomeDaCidade1, "\n")] = 0;
+    // printf("Insira o nome da cidade:\n");
+    // getchar();
+    // fgets(nomeDaCidade1, 50, stdin);
+    // nomeDaCidade1[strcspn(nomeDaCidade1, "\n")] = 0;
 
-    printf("Insira a quantidade populacional da cidade:\n");
-    scanf("%lu", &populacao1);
+    // printf("Insira a quantidade populacional da cidade:\n");
+    // scanf("%lu", &populacao1);
 
-    printf("Insira a área em km² da cidade:\n");
-    scanf("%f", &areaEmKm1);
+    // printf("Insira a área em km² da cidade:\n");
+    // scanf("%f", &areaEmKm1);
 
-    printf("Insira o pib da cidade:\n");
-    scanf("%f", &pib1);
+    // printf("Insira o pib da cidade:\n");
+    // scanf("%f", &pib1);
 
-    printf("Insira o numero de pontos turisticos da cidade:\n");
-    scanf("%d", &numeroDePontosTuristicos1);
-    printf("\n");
+    // printf("Insira o numero de pontos turisticos da cidade:\n");
+    // scanf("%d", &numeroDePontosTuristicos1);
+    // printf("\n");
 
     // Interação do usuario para a carta 2
 
-    printf("Insira as informações da segunda carta\n");
-    printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados):\n");
-    scanf(" %c", &estado2);
+    // printf("Insira as informações da segunda carta\n");
+    // printf("Insira uma letra de 'A' a 'H' (representando um dos oito estados):\n");
+    // scanf(" %c", &estado2);
 
-    printf("Insira o código da carta (ex: A01, B03):\n");
-    scanf("%s", codigoDaCarta2);
+    // printf("Insira o código da carta (ex: A01, B03):\n");
+    // scanf("%s", codigoDaCarta2);
 
-    printf("Insira o nome da cidade:\n");
-    getchar();
-    fgets(nomeDaCidade2, 50, stdin);
-    nomeDaCidade2[strcspn(nomeDaCidade2, "\n")] = 0;
+    // printf("Insira o nome da cidade:\n");
+    // getchar();
+    // fgets(nomeDaCidade2, 50, stdin);
+    // nomeDaCidade2[strcspn(nomeDaCidade2, "\n")] = 0;
 
-    printf("Insira a quantidade populacional da cidade:\n");
-    scanf("%lu", &populacao2);
+    // printf("Insira a quantidade populacional da cidade:\n");
+    // scanf("%lu", &populacao2);
 
-    printf("Insira a área em km² da cidade:\n");
-    scanf("%f", &areaEmKm2);
+    // printf("Insira a área em km² da cidade:\n");
+    // scanf("%f", &areaEmKm2);
 
-    printf("Insira o pib da cidade:\n");
-    scanf("%f", &pib2);
+    // printf("Insira o pib da cidade:\n");
+    // scanf("%f", &pib2);
 
-    printf("Insira o numero de pontos turisticos da cidade:\n");
-    scanf("%d", &numeroDePontosTuristicos2);
+    // printf("Insira o numero de pontos turisticos da cidade:\n");
+    // scanf("%d", &numeroDePontosTuristicos2);
 
     // Calculo Densidade Populacional
 
@@ -108,7 +110,7 @@ int main()
     printf("------------ PRIMEIRA CARTA -----------\n");
 
     printf("Carta: %d\n", carta1);
-    printf("Estado: %c\n", estado1);
+    printf("Estado: %s\n", estado1);
     printf("Código da carta: %s\n", codigoDaCarta1);
     printf("Nome da cidade: %s\n", nomeDaCidade1);
     printf("População: %lu\n", populacao1);
@@ -123,7 +125,7 @@ int main()
     printf("\n-------- SEGUNDA CARTA ---------\n");
 
     printf("Carta: %d\n", carta2);
-    printf("Estado: %c\n", estado2);
+    printf("Estado: %s\n", estado2);
     printf("Código da carta: %s\n", codigoDaCarta2);
     printf("Nome da cidade: %s\n", nomeDaCidade2);
     printf("População: %lu\n", populacao2);
@@ -156,11 +158,144 @@ int main()
 
     if (populacao1 > populacao2)
     {
-        printf("Resultado: Carta 1 (%c) venceu!", estado1);
+        printf("Resultado: Carta 1 (%c) venceu!\n", estado1);
     }
     else
     {
-        printf("Resultado: Carta 2 (%c) venceu!\n", estado2);
+        printf("Resultado: Carta 2 (%c) venceu! \n", estado2);
+    }
+
+    // Escolha de Cartas para a Batalha
+
+    int escolhaJogador;
+    printf("Escolha qual atributo quer comparar:\n");
+    printf("1.Nome do país (apenas para exibir informações, não para comparação direta)\n");
+    printf("2.População\n");
+    printf("3.Área km²\n");
+    printf("4.PIB\n");
+    printf("5.Numero de Pontos turísticos\n");
+    printf("6.Densidade Demográfica\n");
+
+    scanf("%d", &escolhaJogador);
+    switch (escolhaJogador)
+    {
+    case 1:
+        printf("O confronto é entre %s x %s", pais1, pais2);
+        break;
+
+    case 2:
+        printf("População\n");
+        break;
+
+    case 3:
+        printf("Área\n");
+        break;
+
+    case 4:
+        printf("PIB\n");
+        break;
+
+    case 5:
+        printf("Numero de pontos turísticos\n");
+        break;
+
+    case 6:
+        printf("Densidade Demográfica\n");
+        break;
+
+    default:
+        printf("Numero invalido");
+        break;
+    }
+
+    if (escolhaJogador == 2)
+    {
+        if (populacao1 > populacao2)
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: População\n Os valores do atributo para cada carta são: Carta 1 %lu e Carta 2 %lu\n A Carta vencedora é: Carta 1", pais1, populacao1, populacao2);
+        }
+        else if (populacao1 == populacao2)
+        {
+            printf("Empate!");
+        }
+        else
+        {
+            printf("O País das carta é: %c\n O Atributo escolhido foi: População\n Os valores do atributo para cada carta são: Carta 1 %lu e Carta 2 %lu\n A Carta vencedora é: Carta 2", pais1, populacao1, populacao2);
+        }
+        {
+        }
+    }
+
+    if (escolhaJogador == 3)
+    {
+        if (areaEmKm1 > areaEmKm2)
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: Área km²\n Os valores do atributo para cada carta são: Carta 1 %f e Carta 2 %f\n A Carta vencedora é: Carta 1", pais1, areaEmKm1, areaEmKm2);
+        }
+        else if (areaEmKm1 == areaEmKm2)
+        {
+            printf("Empate!");
+        }
+        else
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: Área km²\n Os valores do atributo para cada carta são: Carta 1 %f e Carta 2 %f\n A Carta vencedora é: Carta 2", pais1, areaEmKm1, areaEmKm2);
+        }
+        {
+        }
+    }
+
+    if (escolhaJogador == 4)
+    {
+        if (pib1 > pib2)
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: PIB\n Os valores do atributo para cada carta são: Carta 1 %f e Carta 2 %f\n A Carta vencedora é: Carta 1", pais1, pib1, pib2);
+        }
+        else if (pib1 == pib2)
+        {
+            printf("Empate!");
+        }
+        else
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: PIB\n Os valores do atributo para cada carta são: Carta 1 %f e Carta 2 %f\n A Carta vencedora é: Carta 2", pais1, pib1, pib2);
+        }
+        {
+        }
+    }
+
+    if (escolhaJogador == 5)
+    {
+        if (numeroDePontosTuristicos1 > numeroDePontosTuristicos2)
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: PIB\n Os valores do atributo para cada carta são: Carta 1 %d e Carta 2 %d\n A Carta vencedora é: Carta 1", pais1, numeroDePontosTuristicos1, numeroDePontosTuristicos2);
+        }
+        else if (numeroDePontosTuristicos1 == numeroDePontosTuristicos2)
+        {
+            printf("Empate!");
+        }
+        else
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: PIB\n Os valores do atributo para cada carta são: Carta 1 %d e Carta 2 %d\n A Carta vencedora é: Carta 2", pais1, numeroDePontosTuristicos1, numeroDePontosTuristicos2);
+        }
+        {
+        }
+    }
+
+    if (escolhaJogador == 6)
+    {
+        if (densidadePopulacional1 < densidadePopulacional2)
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: Densidade Demográfica\n Os valores do atributo para cada carta são: Carta 1 %f e Carta 2 %f\n A Carta vencedora é: Carta 1", pais1, densidadePopulacional1, densidadePopulacional2);
+        }
+        else if (densidadePopulacional1 == densidadePopulacional2)
+        {
+            printf("Empate!");
+        }
+        else
+        {
+            printf("O País das carta é: %s\n O Atributo escolhido foi: PIB\n Os valores do atributo para cada carta são: Carta 1 %f e Carta 2 %f\n A Carta vencedora é: Carta 2", pais1, densidadePopulacional1, densidadePopulacional2);
+        }
+        {
+        }
     }
 
     return 0;
